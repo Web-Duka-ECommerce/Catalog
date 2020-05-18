@@ -5,4 +5,9 @@
   </PropertyGroup>
 
 
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="Core\Domain\" />
+  </ItemGroup>
 </Project>
