@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Api", "Catalog.Api\Catalog.Api.csproj", "{CE49AD0E-1D90-475F-B1C7-4D58ADDA9EF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.UnitTests", "Catalog.UnitTests\Catalog.UnitTests.csproj", "{8309C1F3-E841-48A6-9ACB-0328627D05C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.FunctionalTests", "Catalog.FunctionalTests\Catalog.FunctionalTests.csproj", "{0DFAD288-EA51-4C9B-984F-1644EF95D914}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +17,13 @@ Global
 		{CE49AD0E-1D90-475F-B1C7-4D58ADDA9EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE49AD0E-1D90-475F-B1C7-4D58ADDA9EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE49AD0E-1D90-475F-B1C7-4D58ADDA9EF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8309C1F3-E841-48A6-9ACB-0328627D05C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8309C1F3-E841-48A6-9ACB-0328627D05C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8309C1F3-E841-48A6-9ACB-0328627D05C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8309C1F3-E841-48A6-9ACB-0328627D05C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DFAD288-EA51-4C9B-984F-1644EF95D914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFAD288-EA51-4C9B-984F-1644EF95D914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFAD288-EA51-4C9B-984F-1644EF95D914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFAD288-EA51-4C9B-984F-1644EF95D914}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
