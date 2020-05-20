@@ -10,4 +10,7 @@
     <Folder Include="ViewModel\" />
     <Folder Include="Core\Domain\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
+  </ItemGroup>
 </Project>
