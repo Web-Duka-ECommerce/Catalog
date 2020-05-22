@@ -1,2 +1,2 @@
 # Web Duka Catalog
- Based on eShopWebOnContainers reference app,  Web Duka Catalog service is the module that manages the product catalogue for the Web Duka eCommerce app.
+ Web Duka Catalog service defines the APIs for managing product catalogs for eCommerce solutions.
