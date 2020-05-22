@@ -23,7 +23,10 @@ namespace Catalog.Api.Controllers
         {
             _logger = logger;
         }
-
+        /// <summary>
+        /// Get a list of product catalog items
+        /// </summary>
+        /// <returns>Products</returns>
         [HttpGet]
         [Route("/api/v1/product")]
         [Produces("application/json")]

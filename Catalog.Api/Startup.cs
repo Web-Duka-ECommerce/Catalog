@@ -29,7 +29,12 @@ namespace Catalog.Api
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Web Duka Catalog API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Web Duka Catalog API",
+                    Description = "Simple API for the catalog",
+                    Version = "v1"
+                });
             });
         }
 
