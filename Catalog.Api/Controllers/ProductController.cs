@@ -28,7 +28,6 @@ namespace Catalog.Api.Controllers
         /// </summary>
         /// <returns>Products</returns>
         [HttpGet]
-        [Route("/api/v1/product")]
         [Produces("application/json")]
         [ProducesResponseType(typeof(IEnumerable<ProductView>), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
@@ -43,19 +42,22 @@ namespace Catalog.Api.Controllers
             })
             .ToArray();
         }
-
-        [HttpGet]
-        [Route("/api/v1/product/{id:int}")]
+        /// <summary>
+        /// Get a product by ID
+        /// </summary>
+        /// <param name="productId">The id of the product you want to get</param>
+        /// <returns>A product with id, name and description fields</returns>
+        [HttpGet("{productId}")]
         [Produces("application/json")]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [ProducesResponseType(typeof(ProductView), (int)HttpStatusCode.OK)]
-        public ProductView GetById(int id)
+        public ProductView GetById(int productId)
         {
             var rng = new Random();
             var weather = new ProductView
             {
-                Id = id,
+                Id = productId,
                 Date = DateTime.Now.AddDays(1),
                 Name = Summaries[rng.Next(Summaries.Length)]
             };
